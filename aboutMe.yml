@@ -8,8 +8,8 @@ contactEmail: # don't write on this line
   firstBit: nathanieltan.marlowen.498 # this avoids spam, the @ is implied
   otherBit: gmail.com
 # accounts
-stackOverflowLink: https://stackoverflow.com/users/1835727/ben
-github: notionparallax
+stackOverflowLink: https://stackoverflow.com/users/19253972/ngtaniel
+github: https://github.com/NgTaniel
 
 # This format is called YAML which stands for Yet Another Markup Language
 # It's supposed to be machine readable, and human readable. It does a pretty 
