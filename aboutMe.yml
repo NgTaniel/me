@@ -1,12 +1,12 @@
 # This file is UPER IMPORTANT. It's what joins your github name to your
 # student number, and that's what makes sure that you get a mark.
 
-name: Your Name
-studentNumber: z1234567 # if you're not at UNSW, your org name, e.g. BVN
-officialEmail: noIdea@unsw.edu.au
+name: Nathaniel Tan
+studentNumber: z5425230 # if you're not at UNSW, your org name, e.g. BVN
+officialEmail: nathaniel.tan@student.unsw.edu.au
 contactEmail: # don't write on this line
-  firstBit: firstName.Lastname # this avoids spam, the @ is implied
-  otherBit: whereIwork.com
+  firstBit: nathanieltan.marlowen.498 # this avoids spam, the @ is implied
+  otherBit: gmail.com
 # accounts
 stackOverflowLink: https://stackoverflow.com/users/1835727/ben
 github: notionparallax

@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Learning about the purpose and concept of coding but I would need to read the website a bit more to understand a bit more"Hello world!"
