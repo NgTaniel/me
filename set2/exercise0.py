@@ -66,7 +66,7 @@ def shout(a_string):
           they all do different things. You'll need to actually read the
           docs to find out which one you actually need.
     """
-    the_answer = "a_string".upper()
+    the_answer = a_string.upper()
     return the_answer 
 
 
@@ -95,7 +95,7 @@ def shout_with_a_number(a_string, a_number):
           challenge, see if you can make the test pass with at least two ways
           of doing the same job.
     """
-    the_answer = "a_string".upper() + " " + "a_number".upper()
+    the_answer = a_string.upper() + " " + str(a_number)
     return the_answer
 
 
@@ -150,4 +150,5 @@ if __name__ == "__main__":
     minitest(really_shout, [""], "!")
     minitest(really_shout, ["!"], "!!")
     minitest(shout_with_a_number, ("hello", 42), "HELLO 42")
+    minitest(shout_with_a_number, ("number", 42), "NUMBER 42")
     print("p.s. see note above these results")
