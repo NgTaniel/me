@@ -19,6 +19,7 @@ obvious answer, that's because it is!
 
 from curses.ascii import isupper
 from string import ascii_uppercase
+import string
 
 
 def add_1(a_number):
@@ -70,8 +71,8 @@ def shout(a_string):
           they all do different things. You'll need to actually read the
           docs to find out which one you actually need.
     """
-    the_answer = isupper(a_string) 
-    return the_answer
+    the_answer = shout("a_string")
+    return the_answer 
 
 
 def really_shout(a_string):
@@ -99,7 +100,8 @@ def shout_with_a_number(a_string, a_number):
           challenge, see if you can make the test pass with at least two ways
           of doing the same job.
     """
-    the_answer = None
+    shout_string 
+    the_answer = f"{shout_}"
     return the_answer
 
 
