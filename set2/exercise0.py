@@ -17,6 +17,7 @@ obvious answer, that's because it is!
 """
 
 
+from curses.ascii import isupper
 from string import ascii_uppercase
 
 
@@ -69,7 +70,7 @@ def shout(a_string):
           they all do different things. You'll need to actually read the
           docs to find out which one you actually need.
     """
-    the_answer = ascii_uppercase (a_string)
+    the_answer = isupper(a_string) 
     return the_answer
 
 
