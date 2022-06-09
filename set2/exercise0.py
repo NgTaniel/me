@@ -66,7 +66,7 @@ def shout(a_string):
           they all do different things. You'll need to actually read the
           docs to find out which one you actually need.
     """
-    the_answer = None
+    the_answer = print("{a_string}") 
     return the_answer
 
 
