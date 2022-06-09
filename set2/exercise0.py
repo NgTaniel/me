@@ -17,6 +17,9 @@ obvious answer, that's because it is!
 """
 
 
+from string import ascii_uppercase
+
+
 def add_1(a_number):
     """Return a number that is 1 bigger than number given.
 
@@ -66,7 +69,7 @@ def shout(a_string):
           they all do different things. You'll need to actually read the
           docs to find out which one you actually need.
     """
-    the_answer = print("{a_string}") 
+    the_answer = ascii_uppercase(a_string)
     return the_answer
 
 
