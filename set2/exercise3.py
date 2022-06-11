@@ -25,14 +25,10 @@ def is_odd(a_number):
 
 
 def fix_it(moves=True, should_move=True):
-    if moves == should_move:
+    if moves == True:
         return "WD-40"
-    elif moves and not should_move:
+    else:
         return "No Problem"
-    elif not moves and should_move:
-        return "No Problem"
-    elif not moves and not should_move:
-        return "Duct Tape"
 
         
     """Decide what to do.
