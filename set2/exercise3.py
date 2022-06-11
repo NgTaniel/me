@@ -84,7 +84,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
+    list = []
+    for i in range(5):
+     list.append("#")
+    return list
 
 
 def loops_2():
