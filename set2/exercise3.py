@@ -107,7 +107,10 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_square = []
+    for j in range(10):
+     star_square.append(loops_1c(number_of_items = 10, symbol = "*"))
+    return star_square
 
 
 def loops_3():
