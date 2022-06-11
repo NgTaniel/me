@@ -29,7 +29,7 @@ def fix_it(moves=True, should_move=True):
     if should_move == True:
         return "WD-40"
     else: 
-        return "No problem"
+        return "No Problem"
 
         
     """Decide what to do.
