@@ -25,11 +25,16 @@ def is_odd(a_number):
 
 def fix_it(moves=True, should_move=True):
     if moves: 
-       return "WD-40"
+       return 
+       WD-40
     if should_move:
-        return "Duct Tape"
+        return 
+        Duct 
+        Tape
     if moves:
-        return "No Problem"
+        return 
+        No 
+        Problem
     """Decide what to do.
 
     Using the engineering flowchart (in week2 folder of the CODE1161-2019
