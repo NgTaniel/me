@@ -30,10 +30,6 @@ def fix_it(moves=True, should_move=True):
         return "No Problem"
     else:
         return "Duct Tape"
-    if should_move == should_move:
-        return True
-    else: 
-        return True
         
     """Decide what to do.
 
