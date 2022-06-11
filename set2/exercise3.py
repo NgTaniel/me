@@ -25,8 +25,6 @@ def is_odd(a_number):
 
 
 def fix_it(moves=True, should_move=True):
-    if moves == NO:
-        return should_move
     if should_move == True:
         return "No Problem"
     else:
