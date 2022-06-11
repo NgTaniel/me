@@ -24,10 +24,12 @@ def is_odd(a_number):
 
 
 def fix_it(moves=True, should_move=True):
-    if moves == moves:
-        return True
+    if moves == True:
+        return should_move
+    if should_move == True:
+        return "No Problem"
     else:
-        return True
+        return "Duct Tape"
     if should_move == should_move:
         return True
     else: 
