@@ -25,11 +25,14 @@ def is_odd(a_number):
 
 
 def fix_it(moves=True, should_move=True):
-    if should_move == True:
+    if moves == should_move:
         return "WD-40"
-    else:
+    elif moves and not should_move:
         return "No Problem"
-    
+    elif not moves and should_move:
+        return "No Problem"
+    elif not moves and not should_move:
+        return "Duct Tape"
 
         
     """Decide what to do.
@@ -85,8 +88,6 @@ def loops_1c(number_of_items=5, symbol="#"):
     or the symbol, let it be whatever it wants to be.
     """
     list = []
-    for i in range(5):
-     list.append("#")
     return list
 
 
