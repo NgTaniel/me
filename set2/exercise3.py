@@ -224,13 +224,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    number_list = []
+    wedge_list = []
     for i in range(10):
         row_list = []
-        for j in range(str(i)):
+        for j in range(i+1):
          row_list.append(str(j))
-        number_list.append(row_list)
-    return number_list
+        wedge_list.append(row_list)
+    return wedge_list
 
 
 def loops_7():
