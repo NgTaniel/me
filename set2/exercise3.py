@@ -32,7 +32,6 @@ def fix_it(moves=True, should_move=True):
         return "Duct Tape"
     
 
-
         
     """Decide what to do.
 
@@ -139,7 +138,7 @@ def loops_3():
     """
     list = []
     for i in range(10):
-        list.append(str(numbers))
+        list.append(str(numbers(range(10))))
     return list
 
 
