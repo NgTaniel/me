@@ -225,7 +225,7 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     number_list = []
-    for i in range(str(number_list + 1)):
+    for i in range(j + 1):
         row_list = []
         for j in range(10):
          row_list.append(str(i))
