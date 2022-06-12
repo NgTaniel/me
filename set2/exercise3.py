@@ -224,11 +224,10 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    x = "number + 1 = 10"
     number_list = []
-    for i in range(x):
+    for i in range(10):
         row_list = []
-        for j in range(10):
+        for j in range(i):
          row_list.append(str(j))
         number_list.append(row_list)
     return number_list
