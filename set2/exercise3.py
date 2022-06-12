@@ -141,7 +141,7 @@ def loops_3():
         row_list = []
         for j in range(10):
          row_list.append(i)
-    number_list.append(row_list)
+        number_list.append(row_list)
     return number_list
 
 
