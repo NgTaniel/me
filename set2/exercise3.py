@@ -226,7 +226,7 @@ def loops_6():
     """
     number = "x + 1"
     number_list = []
-    for i in range(str(number)):
+    for i in range(number):
         row_list = []
         for j in range(10):
          row_list.append(str(j))
