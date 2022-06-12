@@ -109,7 +109,7 @@ def loops_2():
           ]
     """
     star_square = []
-    for j in range(10):
+    for i in range(10):
      star_square.append(loops_1c(number_of_items = 10, symbol = "*"))
     return star_square
 
