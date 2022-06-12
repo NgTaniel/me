@@ -26,13 +26,12 @@ def is_odd(a_number):
 
 
 def fix_it(moves=True, should_move=True):
-    if should_move == True:
+    if moves == should_move:
         return "No Problem"
     else:
         return "Duct Tape"
     
-def fix_it(moves=True, should_move=True):
-    if should_move == True:
+    if moves == should_move:
         return "WD-40"
     else:
         return "No Problem"
