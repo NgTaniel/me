@@ -168,8 +168,8 @@ def loops_4():
     for i in range(10):
         row_list = []
         for j in range(10): 
-         arithmetic_list.append(str(j))
-         row_list.append(arithmetic_list)
+         arithmetic_list.append(row_list)
+         row_list.append(str(i))
         return arithmetic_list
 
 
