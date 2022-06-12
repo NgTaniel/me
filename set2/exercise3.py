@@ -200,6 +200,7 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
+
     return None
 
 
@@ -223,7 +224,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    number_list = []
+    for i in range(str(number_list + 1)):
+        row_list = []
+        for j in range(10):
+         row_list.append(str(i))
+        number_list.append(row_list)
+    return number_list
 
 
 def loops_7():
