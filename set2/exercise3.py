@@ -138,7 +138,7 @@ def loops_3():
     """
     list = []
     for i in range(10):
-        list.append
+        list.append(loops_1c(number_of_items = range(10)))
     return list
 
 
