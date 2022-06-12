@@ -33,7 +33,7 @@ def fix_it(moves=True, should_move=True):
     else:
      if moves == should_move:
         return "WD-40"
-     elif moves == should_move:
+     elif moves and not should_move:
         return "No Problem"        
     """Decide what to do.
 
