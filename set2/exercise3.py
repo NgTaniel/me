@@ -31,7 +31,11 @@ def fix_it(moves=True, should_move=True):
     else:
         return "Duct Tape"
     
-
+def fix_it(moves=True, should_move=True):
+    if should_move == True:
+        return "WD-40"
+    else:
+        return "No Problem"
         
     """Decide what to do.
 
@@ -162,7 +166,12 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    arithmetic_list = [] 
+    for i in range(10):
+        row_list = []
+        for j in range(10):
+
+          return None
 
 
 def loops_5():
