@@ -138,7 +138,7 @@ def loops_3():
     """
     list = []
     for i in range(10):
-        list.append(str(numbers(range(10))))
+        list.append
     return list
 
 
