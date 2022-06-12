@@ -136,10 +136,12 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    list = []
+    number_list = []
     for i in range(10):
-        list.append(loops_1c(str(numbers)))
-    return list
+        row_list = []
+        for j in range(10):
+         number_list.append(row_list)
+    return number_list
 
 
 def loops_4():
