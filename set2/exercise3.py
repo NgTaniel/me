@@ -169,7 +169,7 @@ def loops_4():
         row_list = []
         for j in range(10): 
          row_list.append(str(i))
-         arithmetic_list.append(str(j))
+         arithmetic_list.append(row_list == str(j))
         return arithmetic_list
 
 
