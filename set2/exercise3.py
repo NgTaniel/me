@@ -134,7 +134,10 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    list = []
+    for i in range(10):
+        list.append(range(10))
+    return list
 
 
 def loops_4():
