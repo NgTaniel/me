@@ -224,9 +224,9 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    number = "x + 1"
+    x = "number + 1 = 10"
     number_list = []
-    for i in range(number):
+    for i in range(x):
         row_list = []
         for j in range(10):
          row_list.append(str(j))
