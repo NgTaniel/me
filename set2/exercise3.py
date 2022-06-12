@@ -225,10 +225,10 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     number_list = []
-    for i in range(10):
+    for i in range(str(number_list + 1)):
         row_list = []
         for j in range(10):
-         row_list.append(str(i))
+         row_list.append(str(j))
         number_list.append(row_list)
     return number_list
 
