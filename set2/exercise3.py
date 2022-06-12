@@ -3,6 +3,7 @@
 
 
 from concurrent.futures import ThreadPoolExecutor
+import numbers
 from tkinter.messagebox import NO
 
 
@@ -136,7 +137,7 @@ def loops_3():
     """
     list = []
     for i in range(10):
-        list.append(range(10))
+        list.append(str(numbers))
     return list
 
 
