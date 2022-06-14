@@ -200,8 +200,16 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-
-    return None
+    one = "i"
+    two = "j"
+    coordinate_list = []
+    for i in range(10):
+        row_list = []
+        for j in range(5):
+         row_list.append(str(one) + str(i))
+         row_list.append(str(two) + str(j))
+        coordinate_list.append(row_list)
+    return coordinate_list
 
 
 def loops_6():
