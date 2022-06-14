@@ -203,11 +203,11 @@ def loops_5():
     one = "i"
     two = "j"
     coordinate_list = []
-    for i in range(10):
+    for k in range(10):
         row_list = []
-        for j in range(5):
-         row_list.append(str(one) + str(i))
-         row_list.append(str(two) + str(j))
+        for l in range(5):
+         row_list.append(str(one) + str(k))
+         row_list.append(str(two) + str(l))
         coordinate_list.append(row_list)
     return coordinate_list
 
