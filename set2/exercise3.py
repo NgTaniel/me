@@ -206,11 +206,8 @@ def loops_5():
     for k in range(10):
         row_list = []
         for l in range(5):
-         row_list.append(str(one) + str(k))
-         row_list.append(str(two) + str(l))
+         row_list.append(str(one) + str(k) + str(two) + str(l))
         coordinate_list.append(row_list)
-        print(row_list)
-        print(loops_5())
     return coordinate_list
 
 
