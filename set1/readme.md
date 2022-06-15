@@ -1,2 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
 Learning about the purpose and concept of coding but I would need to read the website a bit more to understand a bit more"Hello world!"
+Appending adds an item or string to the appended list, modifying it by adding that item to the existing list. Concatenating only works for strings. However for the moment, I am yet to familiarise myself with the tasks and logic. 
