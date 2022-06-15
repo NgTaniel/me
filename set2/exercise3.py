@@ -209,6 +209,8 @@ def loops_5():
          row_list.append(str(one) + str(k))
          row_list.append(str(two) + str(l))
         coordinate_list.append(row_list)
+        print(row_list)
+        print(loops_5())
     return coordinate_list
 
 
@@ -262,7 +264,14 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    number_of_items = 9
+    star_square = []
+    for i in range(5):
+     quantity_list = []
+    for j in range(number_of_items-2):
+     quantity_list.append(loops_1c(number_of_items, symbol = "*"))
+     star_square.append(quantity_list)
+    return star_square
 
 
 def little_printer(some_kind_of_list, exercise_name):
