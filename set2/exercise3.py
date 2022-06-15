@@ -200,17 +200,14 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    one = "i"
-    two = "j"
     coordinate_list = []
-    for k in range(10):
+    for i in range(10):
         row_list = []
-        for l in range(5):
-         row_list.append(str(one) + str(k) + str(two) + str(l))
+        for j in range(5):
+         row_list.append("(i" + str(j) + ", i" + str(j) + ")")
         coordinate_list.append(row_list)
         print(coordinate_list)
     return coordinate_list
-
 
 def loops_6():
     """Make a wedge of numbers.
