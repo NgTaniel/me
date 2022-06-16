@@ -259,13 +259,33 @@ def loops_7():
     lots of diagrams!
     """
     number_of_items = 9
+    loops = 1
+    blankspace = " "
     star_square = []
     for i in range(5):
-     quantity_list = []
-    for j in range(number_of_items-2):
-     quantity_list.append(loops_1c(number_of_items, symbol = "*"))
-     star_square.append(quantity_list)
+     
+     for j in range(number_of_items):
+        
+        while loops <= 9:
+            structured_list = []
+            quantity_list = []
+            
+            quantity_list.append(loops_1c(int((9 - loops)/2), symbol = " "))
+            quantity_list.append(loops_1c(loops, symbol = "*"))
+            quantity_list.append(loops_1c(int((9 - loops)/2), symbol = " "))
+
+            for i in quantity_list:
+                for n in i:
+                    structured_list.append(n)
+
+
+            print('Hello')
+            print(quantity_list)
+            star_square.append(structured_list)
+            loops += 2
+    print(star_square)
     return star_square
+loops_7()
 
 
 def little_printer(some_kind_of_list, exercise_name):

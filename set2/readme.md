@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Appending adds an item or string to the appended list, modifying it by adding that item to the existing list. Concatenating only works for strings. However for the moment, I am yet to familiarise myself with the tasks and logic.
