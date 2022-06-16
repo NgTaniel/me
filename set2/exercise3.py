@@ -269,24 +269,15 @@ def loops_7():
         while loops <= 9:
             structured_list = []
             quantity_list = []
-            
             quantity_list.append(loops_1c(int((9 - loops)/2), symbol = " "))
             quantity_list.append(loops_1c(loops, symbol = "*"))
             quantity_list.append(loops_1c(int((9 - loops)/2), symbol = " "))
-
             for i in quantity_list:
                 for n in i:
                     structured_list.append(n)
-
-
-            print('Hello')
-            print(quantity_list)
             star_square.append(structured_list)
             loops += 2
-    print(star_square)
     return star_square
-loops_7()
-
 
 def little_printer(some_kind_of_list, exercise_name):
     """Help to see what's going on.
