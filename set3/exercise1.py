@@ -5,6 +5,18 @@ Modify each function until the tests pass.
 """
 
 
+from ast import Try
+from email.errors import MessageDefect
+from http.client import OK
+from itertools import count
+import numbers
+from re import I
+from timeit import repeat
+from tokenize import Number
+from matplotlib.pyplot import step
+from numpy import number
+
+
 def loop_ranger(start, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
@@ -17,10 +29,13 @@ def loop_ranger(start, stop=None, step=1):
     Look up for how range() works in the python docs. You could  answer this
     with just the range function, but we'd like you to do it the long way.
     """
-    return None
+    number_list = []
+    for i in range(start, stop, step):
+        number_list.append(i)
+    return number_list
 
 
-def two_step_ranger(start, stop):
+def two_step_ranger(start, stop, step = int(2)):
     """Make a range that steps by 2.
 
     Sometimes you want to hide complexity.
@@ -28,7 +43,11 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-    return None
+    number_list = []
+    for i in range(start, stop, step):
+        number_list.append(i)
+    return number_list
+
 
 
 def stubborn_asker(low, high):
@@ -39,8 +58,11 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-    return None
-
+    
+    while True:
+        i = input(f'Any number between {low} and {high}')
+        if i <= high and i >= low:
+            return i
 
 def not_number_rejector(message):
     """Ask for a number repeatedly until actually given one.
@@ -49,8 +71,11 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    return None
-
+    while True:
+        i = input(f'Leave a {message} for any non-number')
+        if i != "number":
+            return i
+         
 
 def super_asker(low, high):
     """Robust asking function.
@@ -58,7 +83,10 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
-    return None
+    while True:
+        i = input(f'Any actual number between {low} and {high}')
+        if i <= high and i >= low and i == "number":
+          return i
 
 
 if __name__ == "__main__":

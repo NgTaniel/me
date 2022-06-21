@@ -3,6 +3,8 @@
 
 import math
 
+from numpy import array
+
 
 def binary_search(low, high, actual_number):
     """Do a binary search.
@@ -25,6 +27,19 @@ def binary_search(low, high, actual_number):
     guess = 0
 
     # Write your code in here
+    binary_search(1, 100, 5)
+    low = 1
+    high = 100
+    mid = 5
+    while low <= high:
+        mid = (low + high)//2
+    if array(mid) == 5:
+     return mid
+    elif array(mid)>5:
+        return binary_search(1, mid - 1, 5)
+    else: 
+        return binary_search(mid + 1, 100, 5)
+    
 
     return {"guess": guess, "tries": tries}
 
