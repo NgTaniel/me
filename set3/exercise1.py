@@ -60,7 +60,7 @@ def stubborn_asker(low, high):
     """
     
     while True:
-        i = input(f'Any number between {low} and {high}')
+        i = int(input(f'Any number between {low} and {high}'))
         if i <= high and i >= low:
             return i
 
@@ -72,9 +72,9 @@ def not_number_rejector(message):
     When you do get a number, return it.
     """
     while True:
-        i = input(f'Leave a {message} for any non-number')
-        if i != "number":
-            return i
+        user_input = input(f'Leave a {message} for any non-number')
+        if user_input != "number":
+            return user_input
          
 
 def super_asker(low, high):
@@ -84,10 +84,16 @@ def super_asker(low, high):
     to make a function that does it all!
     """
     while True:
-        i = input(f'Any actual number between {low} and {high}')
-        if i <= high and i >= low and i == "number":
-          return i
-
+        user_input = input(f"Give me a number between {low} and {high} please: ")
+        try:
+            num = int(user_input)
+            if low < num < high:
+                return num
+            else: 
+                print(f"{num} is not between {low} and {high}")
+        except Exception as e:
+            print(f"{user_input} isn't an integer. Enter an integer please")
+        
 
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
