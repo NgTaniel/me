@@ -28,26 +28,7 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
-    print("Welcome to my guessing game!")
-    print("An integer between 1 and 50 ?")
-    upperBound = input("Enter an upper bound: ")
-    print(f"OK then, a integer between {1} and {50} ?")
-    upperBound = int(50)
 
-    guessing_correct = random.randint(0, 50)
-
-    guessed = False
-
-    while not guessed:
-        user_guess = int(input("Guess an integer: "))
-        print(f"You guessed {user_guess},")
-        if user_guess == guessing_correct:
-            print(f"You got it! It was {guessing_correct}")
-            guessed = True
-        elif user_guess < guessing_correct:
-            print("Too low or below the lower bound, try again :(")
-        else:
-            print("Too high or above the upper bound, try again :(")
     return "You got it!"
 
 
