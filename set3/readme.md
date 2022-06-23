@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+It is possible to break a while loop by placing a 'break' inside that loop. Sometimes to increase the number of guesses is done by "+= (number of consecutive guesses done)". Always return at the end to ensure the code is complete. 
