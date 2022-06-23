@@ -5,6 +5,8 @@ Steps on the way to making your own guessing game.
 
 import random
 
+from numpy import number
+
 
 def advancedGuessingGame():
     """Play a guessing game with a user.
@@ -28,12 +30,31 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
-
-    return "You got it!"
-
-
+    print("Welcome to the guessing game!")
+    print("A number between 0 and 50 ?")
+    print("OK then, a number between 0 and 50 ?")
+    upperBound = int(50)
+    lowerBound = int(0)
+    guess=0
+    actualNumber = random.randint(lowerBound, upperBound)
+    while True and guess<20:
+            user_input = input(f"Give me a number between {lowerBound} and {upperBound} please: ")
+            guess +=1
+            #print(guess)
+            try:
+                  user_input = int(user_input)
+                  if(actualNumber == user_input):
+                        print(f"You guessed correctly,")
+                        return "You got it!"
+                  elif lowerBound > user_input or user_input > upperBound: 
+                        print("Outside the bounds, try again :'(")
+                  elif (user_input < actualNumber):
+                        print("Too low, try again")
+                  else:
+                        print("Too big, try again")
+            except:
+                  print(f"{user_input} isn't an integer. Enter an integer please") 
     # the tests are looking for the exact string "You got it!". Don't modify that!
-
-
+            return "You got it!"
 if __name__ == "__main__":
-    print(advancedGuessingGame())
+      print(advancedGuessingGame())
