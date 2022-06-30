@@ -34,7 +34,7 @@ def wordy_pyramid():
      for i in range(a, b, c):
         url = baseURL.format(length=i)
         r = requests.get(url)
-        if r.status_code is 200:
+        if r.status_code == 200:
             message = r.text
             pyramid_list.append(message)
         else:
