@@ -80,10 +80,23 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &wordlength=
     """
-    pyramid = []
+    # def append_message(baseURL, a, b, c):
+    #  pyramid_list = []
+    #  for i in range(a, b, c):
+    #     url = baseURL.format(length=i)
+    #     r = requests.get(url)
+    #     if r.status_code == 200:
+    #         message = r.text
+    #         pyramid_list.append(message)
+    #     else:
+    #         print("failed a request", r.status_code, i)
+    #  return pyramid_list
+    # letter_pyramid = []
+    # letter_pyramid.append(append_message(3, 21, 2))
+    # letter_pyramid.append(append_message(20, 3, -2))
+    # return letter_pyramid
+    
     user_data = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=20"
-
-    return pyramid
 
 
 def pokedex(low=1, high=5):
@@ -100,16 +113,16 @@ def pokedex(low=1, high=5):
          get very long. If you are accessing a thing often, assign it to a
          variable and then future access will be easier.
     """
-    gym = []
     for id in range(low, high):
         url = f"https://pokeapi.co/api/v2/pokemon/{id}"
         this_pokemon = requests.get(url)
         p_data = this_pokemon.json()
-        # name = p_data['name']
-        # height = p_data['height']
-        # weight = p_data['weight']
-        # print({"name": name, "weight": weight, "height": height})
-    #return {"name": name, "weight": weight, "height": height}
+        name = p_data["name"]
+        height = p_data["height"]
+        weight = p_data["weight"]
+        if height == high:
+            break
+        return {"name": name, "weight": weight, "height": height}
 
 
 def diarist():
@@ -136,7 +149,6 @@ if __name__ == "__main__":
     print(get_some_details())
 
     wp = wordy_pyramid()
-    [print(f"{word} {len(word)}") for word in wp]
 
     print(pokedex(low=3, high=7))
 

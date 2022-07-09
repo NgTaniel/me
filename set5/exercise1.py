@@ -39,12 +39,10 @@ def wordy_pyramid():
             pyramid_list.append(message)
         else:
             print("failed a request", r.status_code, i)
-     return pyramid_list
-
-    letter_pyramid = []
-    letter_pyramid.append(append_message(baseURL, 3, 21, 2))
-    letter_pyramid.append(append_message(baseURL, 20, 3, -2))
-    return letter_pyramid
+     letter_pyramid = []
+     letter_pyramid.append(append_message(baseURL, 3, 21, 2))
+     letter_pyramid.append(append_message(baseURL, 20, 3, -2))
+     return letter_pyramid
     
 
 
@@ -59,6 +57,6 @@ def list_of_words_with_lengths(list_of_lengths):
     
 if __name__ == "__main__":
     pyramid = wordy_pyramid()
-    for i in range(len(pyramid)):
-        for j in range(len(pyramid[i])):
-            print(pyramid[i][j])
+    # for i in range(len(pyramid)):
+    #     for j in int(len(pyramid[i])):
+            # print(pyramid[i][j])
