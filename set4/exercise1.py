@@ -120,8 +120,6 @@ def pokedex(low=1, high=5):
         name = p_data["name"]
         height = p_data["height"]
         weight = p_data["weight"]
-        if height == high:
-            break
         return {"name": name, "weight": weight, "height": height}
 
 
