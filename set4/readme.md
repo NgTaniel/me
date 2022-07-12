@@ -1,2 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
 Are there any settings that would adjust the data if there is an update or would this normally be done manually?
+Despite the less exercises, it was a complicated week. A tip that I learnt was to not rush myself when it comes to learning this language. It is important to try to think before moving on and commencing the next action. JSON data would often return as dictonaries. 
