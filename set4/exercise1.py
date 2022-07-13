@@ -80,25 +80,26 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &wordlength=
     """
-    # def append_message(baseURL, a, b, c):
-    #  pyramid_list = []
-    #  for i in range(a, b, c):
-    #     url = baseURL.format(length=i)
-    #     r = requests.get(url)
-    #     if r.status_code == 200:
-    #         message = r.text
-    #         pyramid_list.append(message)
-    #     else:
-    #         print("failed a request", r.status_code, i)
-    #  return pyramid_list
-    # letter_pyramid = []
-    # letter_pyramid.append(append_message(3, 21, 2))
-    # letter_pyramid.append(append_message(20, 3, -2))
-    # return letter_pyramid
+    pyramid_list = []
+    baseURL = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={length}"
+    for i in range(3, 21, 2):  
+        url = baseURL.format(length=i)
+        r = requests.get(url)
+        if r.status_code == 200:
+            message = r.text
+            pyramid_list.append(message)
+        else:
+            print("failed a request", r.status_code, i)
+    for j in range(20, 3, -2):
+        url = baseURL.format(length=j)
+        r = requests.get(url)
+        if r.status_code == 200:
+            message = r.text
+            pyramid_list.append(message)
+        else:
+            print("failed a request", r.status_code, j)
+    return pyramid_list
     
-    user_data = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=20"
-
-
 def pokedex(low=1, high=5):
     """Return the name, height and weight of the tallest pokemon in the range low to high.
 
@@ -114,12 +115,14 @@ def pokedex(low=1, high=5):
          variable and then future access will be easier.
     """
     for id in range(low, high):
+        pokemon_list = []
         url = f"https://pokeapi.co/api/v2/pokemon/{id}"
         this_pokemon = requests.get(url)
         p_data = this_pokemon.json()
         name = p_data["name"]
         height = p_data["height"]
-        weight = p_data["weight"]
+        weight = p_data["weight"] 
+        pokemon_list.append(p_data)  
         return {"name": name, "weight": weight, "height": height}
 
 
@@ -140,6 +143,7 @@ def diarist():
 
     NOTE: this function doesn't return anything. It has the _side effect_ of modifying the file system
     """
+
     pass
 
 
