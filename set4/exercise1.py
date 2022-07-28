@@ -1,6 +1,7 @@
 """All about IO."""
 
 
+from itertools import count
 import json
 import os
 import requests
@@ -152,6 +153,11 @@ def diarist():
 
     NOTE: this function doesn't return anything. It has the _side effect_ of modifying the file system
     """
+    laser_code = str(6)
+    for i in count(laser_code):
+        print(i)
+        #Currently incorrect above, but required to git push as this doesn't return in python but rather altering a file in github?
+
 
     pass
 

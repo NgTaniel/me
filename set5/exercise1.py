@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+from tracemalloc import start, stop
 import requests
 
 """REFACTORING
@@ -29,9 +30,8 @@ def wordy_pyramid():
         "https://us-central1-waldenpondpress.cloudfunctions.net/"
         "give_me_a_word?wordlength={length}"
     )
-    def append_message(baseURL, a, b, c):
-     pyramid_list = []
-     for i in range(a, b, c):
+    pyramid_list = []
+    for i in range(3, 21, 2):  
         url = baseURL.format(length=i)
         r = requests.get(url)
         if r.status_code == 200:
@@ -39,24 +39,40 @@ def wordy_pyramid():
             pyramid_list.append(message)
         else:
             print("failed a request", r.status_code, i)
-     letter_pyramid = []
-     letter_pyramid.append(append_message(baseURL, 3, 21, 2))
-     letter_pyramid.append(append_message(baseURL, 20, 3, -2))
-     return letter_pyramid
+    for j in range(20, 3, -2):
+        url = baseURL.format(length=j)
+        r = requests.get(url)
+        if r.status_code == 200:
+            message = r.text
+            pyramid_list.append(message)
+        else:
+            print("failed a request", r.status_code, j)
+    return pyramid_list
     
+    pyramid_list = [message for i in range(3,21,2)]
 
 
 def get_a_word_of_length_n(length):
-    pass
+    # word_length = []
+    # for i in range(3, 21, 2):  
+    #     url = baseURL.format(length=i)
+    #     r = requests.get(url)
+    #     if r.status_code == 200:
+    #         message = r.text
+    #         word_length.append(message)    
+    # return()
 
 
-def list_of_words_with_lengths(list_of_lengths):
-    pass
+    def list_of_words_with_lengths(list_of_lengths):
+    # list_of_lengths(first,mid,last)
+    # word_list = []
+    # for i in range(list_of_lengths): 
+    # pass
 
 
     
-if __name__ == "__main__":
-    pyramid = wordy_pyramid()
-    # for i in range(len(pyramid)):
-    #     for j in int(len(pyramid[i])):
-            # print(pyramid[i][j])
+        if __name__ == "__main__":
+            pyramid = wordy_pyramid()
+            # for i in range(len(pyramid)):
+            #     for j in int(len(pyramid[i])):
+                # print(pyramid[i][j])
