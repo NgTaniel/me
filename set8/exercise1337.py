@@ -181,8 +181,13 @@ def best_letter_for_pets() -> str:
     TIP: you've seen this before in the pokedex.
     """
     import string
-
+    
     the_alphabet = string.ascii_lowercase
+    length = len(str(pets))
+    for i in range(length):
+        if the_alphabet in pets[i]:
+            item = str(pets[i])
+            most_popular_letter.append(item)
     most_popular_letter = ""
 
     return most_popular_letter
@@ -231,7 +236,7 @@ def random_filler_text(number_of_words=200) -> str:
     """
 
     my_dict = make_filler_text_dictionary()
-
+    random.randint(low,high)
     words = []
 
     return " ".join(words)
