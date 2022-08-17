@@ -1,1 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Inside pandas, the file name and type must be quoted as a string to be able to run, whilst pip installing libraries such as pandas itself. 
+Some things I am yet to understand is the axiom exercises and the way how it would mainly work and run. Whilst installing the libraries, I'm yet to fully understand how to deal with installation issues. 

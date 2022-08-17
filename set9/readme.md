@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Another aspect learnt when collecting different information and data from the dataset is mainly learnt from the pandas and geo-pandas website, where it contains the different type of plots that can be coded and achieved. It is essential to run any importation of libraries for the code display to properly run, otherwise it will return an error such as 'size limit' and 'undefined'. 

@@ -1,1 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+As me and my tutor went through my initial dataset of bushfire boundaries, there were around approximately less than 50 lines of data. This would not be enough to share and present for an extensive period. 
+We then found another data collecting information and statistics on Bushfire history, however this is mainly focused on South Australia. But I will attempt to explain how the activities and impacts are relatable to the bushfires across the other states.

@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+During the flexibility week of the term, I explicitly researched the internet for various datasets before selecting one. I used the link shared in teams focusing on Australian statistics and selected a bushfire related topic.  

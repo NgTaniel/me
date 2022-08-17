@@ -1,1 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Upon looking at the original source where the selected dataset was found, there was a shapefile which can be used to pip install geo-pandas, where the library provides a map of the bushfires as well as the epicentre of each reported incident across the state.
+When attempting to import a new library, it must be pip installed otherwise it will be undefined when run. 
